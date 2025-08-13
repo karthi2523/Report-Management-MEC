@@ -1,0 +1,479 @@
+### Faculty proposing for an event
+POST http://localhost:1234/seminar/ecrProposal/data_management_seminar
+Content-Type: application/json
+
+{
+    
+    "event_title":"Express",
+    "event_organizer":"CSE",
+    "event_sponsor":"CSI & Management",
+    "event_date":"2023-10-20",
+    "event_venue":"Data analytics lab",
+    "guest_name":"Mr. Razak Mohamed",
+    "guest_designation":"Full stack trainer, Zealous",
+    "guest_address":"Salem",
+    "guest_number":8667002959,
+    "guest_email":"razaksrmd@gmail.com",
+    "student_count":64,
+    "faculty_count":3,
+    "others_count":0,
+    "proposal_date":"",
+    "proposal_hod":"",
+    "proposal_principal":"",
+    "event_budget":40000,
+    "event_coordinator":"Victor Prakash",
+  
+    "coordinator_phno":9944085437,
+    "coordinator_designation":406,
+    "acdyr_id":1,
+    "dept_id":1,
+    "sem_id":1
+}
+
+
+####
+
+PUT http://localhost:1234/seminar/ecrCompletion/data_management_seminar/5016
+Content-Type: application/json
+
+{
+    "event_photo_1":"Blockchain1_05-11-2023_20-53-41.png",
+    "event_photo_2":"Blockchain2_05-11-2023_20-53-41.png"
+}
+
+###
+PUT http://localhost:1234/seminar/completionacknowledgelevel2/data_management_seminar/1/6000/5020
+
+
+###
+
+GET http://localhost:1234/seminar/getAcdYrWithSubType/3003
+
+###
+
+POST http://localhost:1234/seminar/ecrProposal/data_management_Seminar
+Content-Type: application/json
+
+{
+    "report_id":"RPT5005",
+    "http://localhost:1234":"seminar",
+    "event_title":"Vue JS",
+    "event_organizer":"CSE",
+    "event_sponsor":"CSI & Management",
+    "event_date":"2023-10-20",
+    "event_venue":"Data analytics lab",
+    "guest_name":"Mr. Razak Mohamed",
+    "guest_designation":"Full stack trainer, Zealous",
+    "guest_address":"Salem",
+    "guest_phone_number":8667002959,
+    "guest_email":"razaksrmd@gmail.com",
+    "student_count":64,
+    "faculty_count":3,
+    "others_count":0,
+    "event_budget":40000,
+    "event_coordinator":"Victor Prakash",
+    "coordinator_emp_id":6007,
+    "coordinator_phone_number":9944085437,
+    "coordinator_designation":406,
+    "event_date_from":"0000-00-00",
+    "event_date_to":"0000-00-00",
+    "acdyr_id":3,
+    "dept_id":4,
+    "sem_id":1
+}
+
+
+
+###
+
+GET http://localhost:1234/seminar/supply/Cloud-2023-09-11-1694405954
+
+###
+
+GET http://localhost:1234/seminar/dept/6004
+
+### HoD is receiving the requested proposal
+GET  
+
+###
+
+### HoD approves the proposal
+PUT http://localhost:1234/seminar/acknowledgelevel1/1/6001/1
+
+###
+
+### Principal is receiving the requested proposal
+GET http://localhost:1234/seminar/loadforlevel2/0/60MEC
+
+###
+
+### Principal approves the proposal
+PUT http://localhost:1234/seminar/acknowledgelevel2/data_management_seminar/0/6000/5003
+
+###
+
+################## Proposal over #####################
+
+###
+
+### Faculty is receiving his/her proposal after approved
+GET http://localhost:1234/ecrWorkshop/loadforCompletion/1
+
+###
+
+### Faculty is updating the completion report
+PUT http://localhost:1234/seminar/ecrCompletion/data_management_seminar/RPT5004
+Content-Type: application/json
+
+{
+    "event_photo_1":"photo/path1",
+    "event_photo_2":"photo/path2",
+    "event_po":"1,2,3,4",
+    "completion_date":"0000-00-00",
+    "completion_hod":"0000-00-00",
+    "completion_principal":"0000-00-00",
+    "pdf":"pdf/path",
+    "event_duration":"3hrs",
+    "event_os":"Dr. G. Kavitha",
+    "event_time":"10 am",
+    "event_description":"The event was about how to develop a webpage using React JS",
+    "event_budget_utilized":50000,
+    "reqMail":"snjnjzx"
+}
+
+###
+
+### HoD is receiving the completion report
+GET http://localhost:1234/ecrWorkshop/eventcompletionloadlevel1/1/6001
+
+###
+
+### HoD approves the completion report
+PUT http://localhost:1234/ecrWorkshop/completionacknowledgelevel1/1/6001
+
+###
+
+### Principal is receiving the completion report
+GET http://localhost:1234/ecrWorkshop/completionloadlevel2/1
+
+###
+
+### Principal approves the completion report
+PUT http://localhost:1234/ecrWorkshop/completionacknowledgelevel2/1/RPT0000001
+
+
+GET http://localhost:1234/seminar/find
+
+###
+
+POST http://localhost:1234/login
+Content-Type: application/json
+
+{
+    "id":"60CS03",
+    "pass":"vijaycse"
+}
+
+###
+
+POST http://localhost:1234/seminar/dropdownSubTypeWithMajor/2001
+
+###
+
+GET http://localhost:1234/seminar/compare/21CS121
+
+
+
+##################################################
+####################################################
+#####################################################
+#####################################################
+#######################################################
+########################################################
+
+GET http://localhost:1234/load/loadforlevel1/1/6001
+
+###
+
+PUT http://localhost:1234/load/acknowledgelevel1/data_management_seminar/0/6000/5035
+
+###
+
+GET http://localhost:1234/load/loadforlevel2/1/6000
+
+###
+
+PUT http://localhost:1234/load/acknowledgelevel2/data_management_seminar/1/6000/5033
+
+
+
+
+###
+GET http://localhost:1234/journal/journallist/60EE18
+
+
+{
+        "academic_year":"2023-24",
+        "semester":"odd",
+        "department":"cse",
+        "name_of_author":"Anand",
+        "title_of_paper":"Journal ",
+        "name_of_journal":"ML",
+        "year_of_publication":"2020",
+        "month_of_publication":"February",
+        "issn_number":1234,
+        "volume_no":3432,
+        "issue_no":2345,
+        "page_no":23452,
+        "journal_listed_in":"alkd",
+        "link_to_website_of_journal":"http",
+        "journal_first_page_PDF":""
+}
+###
+
+GET http://localhost:1234/conference/conferencelist/60EE18
+###
+POST http://localhost:1234/journal/journalnewrecord/60EE18
+Content-Type: application/json
+
+    {
+            "report_id":"21",
+            "dept_id":"4",
+            "academic_year":"2023-24",
+            "semester":"odd",
+            "department":"cse",
+            "name_of_author":"Anand",
+            "title_of_paper":"Journal ",
+            "name_of_journal":"ML",
+            "year_of_publication":"2020",
+            "month_of_publication":"February",
+            "issn_number":1234,
+            "volume_no":3432,
+            "issue_no":2345,
+            "page_no":23452,
+            "journal_listed_in":"alkd",
+            "link_to_website_of_journal":"http",
+            "journal_first_page_PDF":""
+    }
+
+
+###
+GET http://localhost:1234/journal/journalrecs
+
+###
+POST http://localhost:1234/conference/conferencenewrecord/60EE18
+Content-Type: application/json
+
+{
+        "report_id":"5",
+        "dept_id":"4",
+        "academic_year":"2024",	
+        "semester":"odd",	
+        "department":"cse",
+        "name_of_the_authors":"anand",
+        "title_of_the_conference_paper":"ml",
+        "name_of_the_conference":"ml",
+        "place_of_the_conference":"ml",
+        "conference_type":"ml",
+        "date_of_conference":"2023-02-01",
+        "isbn_of_the_conference_proceeding":"124",
+        "conference_certificate_and_proceeding_pdf":""	
+}
+
+###
+GET http://localhost:1234/setaf/conferencerecs
+###
+GET http://localhost:1234/setaf/conferencelist/60EE18
+
+###
+POST http://localhost:1234/setaf/workshopnewrecord/60EE18
+Content-Type: application/json
+
+{
+    "report_id":"1",
+        "dept_id":"4",
+        "subtype":"seminar",
+        "name_of_the_faculty":"anand",
+        "designation":"student",
+        "nature_of_the_program":"workshop",
+        "title_of_the_program":"ml",
+        "duration_from":"2023-02-01",
+        "duration_to":"2023-03-01",
+        "participation":"ak",
+        "name_of_the_organization_and_place":"mec",
+        "location_of_organization":"rasipuram",
+        "amount_provided_by_the_HEI":"100",
+        "Certificates_pdf":""
+}
+
+###
+POST http://localhost:1234/setaf/techtalknewrecord/60EE18
+Content-Type: application/json
+
+{
+        "report_id":11,
+        "emp_id":"60EE18",
+        "dept_id":4,
+        "name_of_the_faculty":"Anand",
+        "MuDiL_number":"9208",
+        "lecture_delivered_to_branch":"akj",
+        "semester":"2",
+        "section":"a",
+        "data_of_lecture_delivered":"2023-02-03",
+        "period":2,
+        "topic_of_discussion":"ml",
+        "no_of_beneficiaries":100,
+        "detail_of_discussion_made":"ml",
+        "outcome_of_the_discussion":"good",
+        "outcome_of_he_activity":"good",
+        "PO_and_PSO":"no",
+        "attendance_sheet_pdf":"",
+        "handout_of_lecture_pdf":""
+}
+###
+GET http://localhost:1234/setaf/journallist/60EE18
+
+###
+GET http://localhost:1234/setaf/visittolibrarylist/60EE18
+
+###
+GET http://localhost:1234/setaf/visittolibraryrecs
+
+
+###
+GET http://localhost:1234/setaf/visittolibrary/hoddashboard/4
+
+###
+POST http://localhost:1234/setaf/visittolibrarynewrecord/60CS18
+Content-Type: application/json
+
+{
+    "report_id": 7,
+    "emp_id": "",
+    "dept_id": 4,
+    "academic_year":"2024-25",
+    "name_of_the_faculty": "Anand",
+    "date": "2024-02-01",
+    "purpose_of_visit": "Reading"
+}
+
+/////award at national and international
+
+###
+POST http://localhost:1234/setaf/awardatnational/60EE18
+Content-Type: application/json
+
+{
+    "report_id":9,
+    "emp_id":"60EE18",
+    "dept_id":4,
+    "academic_year":3,
+    "semester":"ODD",
+    "name_of_the_faculty":"Anand",
+    "name_of_the_award":"Behindhoods",
+    "category":"National",
+    "date_of_award":"2024-04-02",
+    "name_of_awarding_organization":"Behindhood",
+    "award_certificate_pdf":""
+}
+###
+GET http://localhost:1234/setaf/awardatnationallist/60EE18
+
+###
+GET http://localhost:1234/setaf/awardatnational/hoddashboard/4
+
+###
+GET http://localhost:1234/setaf/awardatnational/principaldashboard
+
+
+###
+POST http://localhost:1234/setaf/booksrecord/60EE18
+Content-Type: application/json
+
+{
+    "report_id":9,
+    "emp_id":"60EE18",
+    "dept_id":4,
+    "academic_year":"3",
+    "semester":"Even Semester",
+    "name_of_the_faculty":"Anand",
+    "name_of_the_authors":"",
+    "title_of_the_book":"",
+    "date_of_publication":"",
+    "isbn_number":"",
+    "details_of_the_publisher":"",
+    "website_link_of_the_publisher":"",
+    "national_international":"",
+    "enclose_proof_pdf":""
+}
+
+###
+GET http://localhost:1234/setaf/bookslist/60EE18
+
+###
+GET http://localhost:1234/setaf/books/hoddashboard/4
+
+####
+GET http://localhost:1234/setaf/books/principaldashboard
+
+###
+POST http://localhost:1234/setaf/filterSetaf/data_setaf_journal_publication/1
+Content-Type: application/json
+
+{
+    "academic_year":"3"
+}
+
+###
+GET http://localhost:1234/seminar/findFacWithDept/1
+
+###
+POST http://localhost:1234/setaf/Motivationnewrecord/60EE18
+Content-Type: application/json
+
+{
+        "report_id":9,
+        "emp_id":"",
+        "dept_id":4,
+        "academic_year":"2023-24",
+        "semester":"Odd",
+        "name_of_the_faculty":"Anand",	
+        "name_of_the_student":"AK",
+        "paper_presentation_project_submission_other_contest":"paper",
+        "date":"2023-01-02",
+        "no_of_beneficiaries":"10",
+        "certificate_PDF":""
+}
+
+###
+GET http://localhost:1234/setaf/professionallist/hoddashboard/1
+
+###
+GET http://localhost:1234/setaf/fieldworkrecs
+
+////fdpsdp
+###
+POST http://localhost:1234/setaf/fdpsdp/newrecord/60EE18
+Content-Type: application/json
+
+{
+        "report_id":2,
+        "emp_id":"60EE18",
+        "dept_id":4,
+        "name_of_the_faculty":"Anand",
+        "academic_year":"2",
+        "semester":"2",
+        "designation":"Asst Professor",
+        "nature_of_the_program":"Workshop",
+        "title_of_the_program":"ML",
+        "duration_from":"2023-02-01",
+        "duration_to":"2024-02-01",
+        "participation":"Internal",
+        "name_of_the_organization_and_place":"Muthayammal Engineering College",
+        "location_of_organization":"Rasipuram",
+        "amount_provided_by_the_HEI":"25000",
+        "certificates_pdf":""
+}
+
+###
+GET http://localhost:1234/setaf/fdpsdplist/60EE18

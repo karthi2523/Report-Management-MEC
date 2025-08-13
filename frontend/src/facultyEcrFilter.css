@@ -1,0 +1,36 @@
+.button-container{
+  position: relative;
+  left: -70px;
+  top: -40px;
+  margin-left: -100px;
+}
+.filter-dropdowns {
+    margin-left: 10px;
+    display: flex;
+    height: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filter-dropdowns label {
+    margin-right: 0px;
+    margin-top: 5px;
+    width: auto;
+  }
+
+  .filter-dropdowns select {
+    width: 200px;
+  }
+
+  .filter-button{
+    width: 100px;
+    padding: 7px;
+    border-radius: 15%;
+    margin-top: 0px;
+    position: relative;
+    left: 50px;
+    background-color: rgb(93, 201, 93);
+    color: white;
+    border: none;
+  }

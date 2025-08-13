@@ -1,0 +1,90 @@
+POST http://localhost:1234/setaf/filterSetaf/data_setaf_journal_publication
+Content-Type: application/json
+
+{
+    "acdyr_id":"1,2,3",
+    "sem_id":"2",
+    "dept_id":"",
+    "emp_id":""
+}
+
+###
+
+GET http://localhost:1234/setaf/getAcdyr
+
+###
+
+GET http://localhost:1234/setaf/getDeptById/4
+
+###
+POST http://localhost:1234/setaf/filterSetaf/data_setaf_journal_publication
+Content-Type: application/json
+
+{
+    "dept_id":"1",
+    "acdyr_id":"1",
+    "emp_id":"60CS01,60EE18"
+}
+
+###
+POST http://localhost:1234/setaf/filterSetaf/data_setaf_students_motivation/60EE18
+Content-Type: application/json
+
+{
+    "acdyr_id":"3"
+}
+
+###
+post http://localhost:1234/setaf/proposalnewrecord/60EE18
+Content-Type: application/json
+
+{
+        "report_id":"19",
+        "emp_id":"60EE18",
+        "dept_id":"4",
+        "academic_year":"3",
+        "semester":"2",
+        "name_of_the_facculty":"anand",
+        "name_of_the_funding_agency":"vendors",
+        "date_of_submission":"2023-02-01",
+        "type":"Government",
+        "title_of_the_proposal_submitted":"FM",
+        "duration":"2023-02-01",
+        "amount_quoted_in_lakhs":"10000",
+        "grant_sanctioned":"Yes",
+        "proposal_proof_pdf":"",
+        "grant_sanctioned_proof_pdf":""
+}
+
+###
+GET http://localhost:1234/setaf/industry/8
+###
+GET http://localhost:1234/setaf/data/1
+
+###
+GET http://localhost:1234/setaf/filterSetaf/data_setaf_journal_publication
+
+###
+POST http://localhost:1234/setaf/techtalknewrecord/60EE18
+Content-Type: application/json
+
+{
+    "report_id":26,
+    "dept_id":4,
+    "name_of_the_faculty":"Anand",
+    "MuDiL_number":200973,
+    "lecture_delivered_to_branch":"AI",
+    "academic_year":"2023-24",
+    "semester":"Odd",
+    "section":"A",
+    "data_of_lecture_delivered":"2023-02-01",
+    "period":"8",
+    "topic_of_discussion":"AI",
+    "no_of_beneficiaries":"89",
+    "detail_of_discussion_made":"Good",
+    "outcome_of_the_discussion":"Excellent",
+    "outcome_of_the_activity":"Good",
+    "PO_and_PSO":"PO1,POS2",
+    "attendance_sheet_pdf":"",
+    "handout_of_lecture_pdf":""
+}

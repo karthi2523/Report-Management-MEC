@@ -1,0 +1,156 @@
+###
+POST http://localhost:1234/iv/proposeIV
+Content-Type: application/json
+
+{
+    "date_of_visit_from":"2004-09-21"  ,
+    "date_of_visit_to":"2004-10-17" ,
+    "details_of_the_industry_1":"bdhgdsn" ,
+    "details_of_the_industry_2":"fDDAVJXCN", 
+    "details_of_the_industry_3":"jksdogvewuy", 
+    "name_of_the_contact_person_1":"asi", 
+    "designation_of_the_contact_person_1":"tudent" ,
+    "phone_no_of_the_contact_person_1":5465873427, 
+    "email_of_the_contact_person_1":"sundaesansasi2095@gmail.com", 
+    "name_of_the_contact_person_2":"hgxxkb",
+    "designation_of_the_contact_person_2":"xgtf" , 
+    "phone_no_of_the_contact_person_2":7850436723,
+    "email_of_the_contact_person_2":"fgdaxgfsa#@mjh", 
+    "name_of_the_contact_person_3":"chdgyt",
+    "designation_of_the_contact_person_3":"teacher", 
+    "phone_no_of_the_contact_person_3":4378216790, 
+    "email_of_the_contact_person_3":"nbfedtcrf@jbhfd" ,
+    "name_of_the_inn":"hvdfv", 
+    "address_of_the_inn":"vyufwrcsx" , 
+    "phone_no_of_the_inn":9045781267,
+    "students_count":54,
+    "faculty_count":78, 
+    "event_coordinator":"mmhbjg" ,
+    "name_of_the_travel_1":"sai" , 
+    "address_of_the_travel_1":"hccWSYDTGTDV", 
+    "bus_no_of_the_travel_1":"345" ,
+    "operator_of_the_travel_1":"tsrda", 
+    "operator_contact_of_the_travel_1":6590124578, 
+    "name_of_the_travel_2":"sastha",
+    "address_of_the_travel_2":"GDVHJVSG", 
+    "bus_no_of_the_travel_2":"54" ,
+    "operator_of_the_travel_2":"bfc",
+    "operator_contact_of_the_travel_2" :6734096543, 
+    "name_of_the_travel_3":"hgffet" , 
+    "address_of_the_travel_3" :"jgvxf", 
+    "bus_no_of_the_travel_3":"643", 
+    "operator_of_the_travel_3":"dsfvgf", 
+    "operator_contact_of_the_travel_3":9067341287, 
+    "faculty_accompanied" :"gdhcrfvff",
+    "undertaking_from_parents": "yes",
+    "sem_of_students_visited":1,
+    "year_of_students_visited":1,
+    "proposal_date:"2024-12-02"
+}
+
+###
+
+GET http://localhost:1234/iv/fetchIv
+
+###
+
+
+
+###
+# POST http://localhost:1234/iv/report
+# Content-Type: application/json
+
+# {
+#    "Date_of_visit": "2003-11-2",
+#    "year": 2005,
+#    "Total_class_strength":50  ,
+#    "No_of_students_visited":98 ,
+#    "s_no_industry_details":5,
+#    "Name_of_the_industry": "Software",
+#    "Industry_address": "kfjgdk" ,
+#    "Contact_person_industry": "Dubai",
+#    "Contact_number_industry": 5 ,
+#    "Name_of_the_industry2": "jvvh",
+#    "Industry_address2": "jhc" ,
+#    "Contact_person_industry2": "Dijhg",
+#    "Contact_number_industry2": 5234567 ,
+#    "Mode_of_transport":  "Off",
+#    "Name_of_the_travel": "Sundhara" ,
+#    "Address":"jaipur" ,
+#    "Contact_no":98989,
+#    "Name_of_the_travel2": "uijhf" ,
+#    "Address2":"jhc" ,
+#    "Contact_no2":456789,
+#    "iv_students_year":3,
+#    "Name_of_the_faculty_coordinator":"Srimathi",
+#    "place_of_visit":"Mysore",
+#    "No_of_students_visited_in_Iv":144,
+#    "No_of_accompanying_faculty":5,
+#    "Date_of_leaving":"2023-08-09",
+#    "Leaving_time":"8.45 pm",
+#    "Day_1_Reaching_time":"6.05 AM",
+#    "Day_1_FN_time":"11.45 to 2.30",
+#    "Day_1_FN_place":"gfdsxfchgbhj",
+#    "Day_1_AN_time":"6.10 to 7.10",
+#    "Day_1_AN_place":"sdfghj",
+#    "Day_1_night_time":"9.30 PM",
+#    "Day_1_night_place":"sdfghj",
+#    "Day_2_FN_time":"11.20 to 2.10 PM",
+#    "Day_2_FN_place":"cfvgbx",
+#    "Day_2_AN_time":"3.10 to 5.10 PM",
+#    "Day_2_AN_place":"dxgfvbkh",
+#    "Day_2_night_time":"8.22 AM",
+#    "Day_2_night_place":"sgdjhdg",
+#    "Date_of_Arriving":"2023-08-12",
+#    "Time_of_Arriving":"8.22 AM"
+# }
+
+
+
+###
+
+
+GET http://localhost:1234/iv/ivtour
+
+###
+
+###
+PUT http://localhost:1234/iv/update/RPT5014
+Content-Type: application/json
+
+{
+         "acdyr_id":5643, 
+         "sem_id":543 , 
+         "mode_of_transport":"bus", 
+         "dept":1 ,
+         "year_of_students_visited":1 , 
+         "sem_of_students_visited":3 ,
+         "total_class_strength":89 , 
+         "no_of_students_visited":78 , 
+         "students_visited_list":"21CS145",
+         "place_of_visit":"delhi", 
+         "leaving_time":"5pm", 
+         "day_1_reaching_time":"7pm", 
+         "day_1_FN_time":"7am" ,
+         "day_1_FN_place":"hariyana",
+         "day_1_AN_time":"9pm" , 
+         "day_1_AN_place":"kongu" , 
+         "day_1_night_time":"7pmm", 
+         "day_1_night_place":"ksr", 
+         "day_2_FN_time":"5pm" , 
+         "day_2_FN_place":"jalagandapuram" , 
+         "day_2_AN_time":"5am",
+         "day_2_AN_place":"srirangam", 
+         "day_2_night_time":"9am" ,
+         "day_2_night_place":"8am" ,
+         "day_3_FN_time":"5pm" ,
+         "day_3_FN_place": "9am", 
+         "day_3_AN_time":"7am" ,
+         "day_3_AN_place":"kssh" ,
+         "day_3_night_time":"8pm" , 
+         "day_3_night_place":"kjbsx" ,
+         "date_of_arriving":"986",
+         "time_of_arriving":"6am"
+}
+
+###

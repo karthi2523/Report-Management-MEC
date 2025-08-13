@@ -1,0 +1,29 @@
+.overallcontent{
+    align-items: center;
+}
+.head{
+    display: flex;
+    
+}
+/* .ej{
+    display: flex;
+} */
+.block{
+    display: flex;
+}
+label{
+    display: flex;
+    justify-content: first baseline;
+
+}
+button:disabled {
+    background-color: #ccc; /* Change the background color to gray */
+    color: #666; /* Change the text color to a darker shade */
+    cursor: not-allowed; /* Change the cursor to indicate that it's not clickable */
+  }
+
+#event_coordinator{
+    width: 80%;
+    
+}
+
